@@ -4,9 +4,9 @@
 }
 
 body, html {
-    color: #222;
+    color: #fff;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: #fff;
+    background-color: #222;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -27,10 +27,12 @@ h4 {
     font-weight: normal;
 }
 
+/*
 ::selection {
     color: #fff; 
     background-color: #000;
 }
+*/
 
 header {
     padding: 30px 10px 5px 10px;
@@ -46,16 +48,24 @@ footer {
 
 a:link, a:visited {
     text-decoration: none;
-    color: #0f52ba;
+    /* color: #0f52ba; */
     /* color: #0020c2; */
+    color: #0090fe;
+
+    /*
+    background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+
     /* border-bottom: 1px solid #e5e5e5; */
 }
 
 a:hover {
-    text-decoration:underline;
-    /* color: #002088; */
-    /* color: #000; */
-    /* border-bottom: 1px dashed #000; */
+    text-decoration: none;
+    background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
