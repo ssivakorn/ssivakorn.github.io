@@ -4,27 +4,27 @@
 }
 
 body, html {
-    color: #fff;
+    /* color: #eee; */
+    color: #222;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #222;
+    /* background-color: #212121; */
+    background-color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
 
 h1 {
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 h2 {
-    font-weight: normal;
 }
 
 h3 {
-    font-weight: normal;
 }
 
 h4 {
-    font-weight: normal;
+    /* color: #0090fe; */
 }
 
 /*
@@ -49,8 +49,9 @@ footer {
 a:link, a:visited {
     text-decoration: none;
     /* color: #0f52ba; */
-    /* color: #0020c2; */
-    color: #0090fe;
+    color: #0020c2;
+    /* color: #0090fe; */ /* light blue */
+    /* color: #4285f4; */
 
     /*
     background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
