@@ -64,7 +64,7 @@ a:link, a:visited {
 
 a:hover {
     text-decoration: underline;
-    color: #0020c2;
+    color: #0090fe; /* light blue */
     /* background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
