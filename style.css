@@ -4,11 +4,11 @@
 }
 
 body, html {
-    /* color: #eee; */
-    color: #222;
+    color: #eee;
+    /* color: #222; */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /* background-color: #212121; */
-    background-color: #fff;
+    background-color: #202124;
+    /* background-color: #fff; */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -49,8 +49,8 @@ footer {
 a:link, a:visited {
     text-decoration: none;
     /* color: #0f52ba; */
-    color: #0020c2;
-    /* color: #0090fe; */ /* light blue */
+    /* color: #0020c2; */
+    color: #0090fe; /* light blue */
     /* color: #4285f4; */
 
     /*
