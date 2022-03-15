@@ -35,15 +35,17 @@ h4 {
 */
 
 header {
-    padding: 30px 10px 5px 10px;
+    padding: 30px 0px 5px 0px;
     max-width: 980px;
     margin: 0px auto;
+    overflow: auto;
 }
 
 footer {
-    padding: 5px 10px 30px 10px;
+    padding: 20px 0px 30px 0px;
     max-width: 980px;
     margin: 0px auto;
+    overflow: auto;
 }
 
 a:link, a:visited {
@@ -102,8 +104,8 @@ li {
     max-width: 980px;
     height: auto;
     margin: 0px auto;
+    padding: 0px;
     overflow: auto;
-    padding: 0px 10px;
 }
 .half {
     max-width: 470px;
@@ -111,7 +113,7 @@ li {
 
 section {
     /* min-width: 470px; */
-    margin: 0px 10px 10px 0px;
+    margin: 0px 0px 10px 0px;
     float: left;
     width: 100%;
 }
