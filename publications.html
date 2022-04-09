@@ -4,16 +4,28 @@
         <meta charset = "utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Cyber Security Researcher, Consultant, Developer" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="https://avatars1.githubusercontent.com/u/1749489" />		
         <title>Suphannee Sivakorn</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
 <body>
-<header>
-<h1>Suphannee Sivakorn</h1>
-</header>
+<script>
+    $(document).ready(function() {
+        $('#header').load("header.html");
+        $('#footer').load("footer.html");
+    });
+</script>
+
+<div class="banner">
+    <div class="floatright">
+    <div class="banner_inner">
+    <a id="dark-mode-switcher" onclick="toggle_theme()">dark mode: on</a>
+    </div>
+    </div>
+</div>
+<div id="header"></div>
 <div class="content">
 <section>
     <h2>Full Publication List</h2>
@@ -237,11 +249,7 @@
 </section>
 
 </div>
-
-<footer>
-    <!-- <hr /> -->
-    <div class="floatright">&copy; 2020 Suphannee Sivakorn</div>
-</footer>
-
+<div id="footer"></div>
+<script src="helper.js"></script>
 </body>
 </html>

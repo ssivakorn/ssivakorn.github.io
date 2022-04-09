@@ -13,6 +13,13 @@ body, html {
 }
 
 
+
+.light-mode {
+    background-color: #fff;
+    color: #202124;
+}
+
+
 h1 {
     /* font-weight: normal; */
 }
@@ -36,7 +43,7 @@ h4 {
 
 header {
     max-width: 980px;
-    padding: 30px 0px 5px 0px;
+    padding: 50px 0px 5px 0px;
     margin: 0px 20px auto;
     overflow: auto;
 }
@@ -46,6 +53,23 @@ footer {
     padding: 20px 0px 30px 0px;
     margin: 0px 20px auto;
     overflow: auto;
+}
+
+.banner {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 5px 0px; 
+    margin: 0px auto;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    z-index: 1;    
+}
+
+.banner_inner {
+    width: 100%;
+    margin: 0px 20px;
 }
 
 a:link, a:visited {
