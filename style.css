@@ -64,7 +64,6 @@ footer {
     margin: 0px auto;
     position: fixed;
     top: 0;
-    overflow: auto;
     z-index: 1;    
 }
 
