@@ -14,6 +14,8 @@
 <script>
     $(document).ready(function() {
         $('#publist').load("publist.html");
+        $('#disclosures').load("disclosures.html");
+        $('#others').load("others.html");
         $('#footer').load("footer.html");
     });
 </script>
@@ -21,14 +23,14 @@
 <div class="container mt-4">
 <header>
     <h1>ผศ.ดร. สุพรรณี ศิวากรณ์</h1>
-    <h2>Asst. Prof. Suphannee Sivakorn, Ph.D.</h2>
+    <h2>Asst. Prof. Suphannee Sivakorn, Ph.D.</h3>
 ผู้เชี่ยวชาญ ที่ปรึกษา อาจารย์และนักวิจัยทางด้าน Cybersecurity, Data Science และ Big Data Technologies<br />
 Email: <a href="https://mailhide.io/e/Wn4re7aa" onclick="popup=window.open('https://mailhide.io/e/Wn4re7aa','mailhidepopup','width=580,height=635'); return false;">s......@gmail.com</a>
 <br />
 Links:
 <a href="https://github.com/ssivakorn">Github</a>,
-<a href="https://scholar.google.com/citations?user=M0imw8QAAAAJ">Google Scholar</a>,
-<a href="https://twitter.com/ssivakorn">Twitter</a>
+<a href="https://scholar.google.com/citations?user=M0imw8QAAAAJ">Google Scholar</a>
+<!-- <a href="https://twitter.com/ssivakorn">Twitter</a> -->
 <br />
 Website and CV in English: <a href="https://ssivakorn.github.io">https://ssivakorn.github.io</a>
 </p>
@@ -60,6 +62,7 @@ Website and CV in English: <a href="https://ssivakorn.github.io">https://ssivako
             <li>
                 <b>มหาวิทยาลัยมหิดล (Mahidol University)</b>, มิถุนายน 2006 - เมษายน 2010<br />
                 ปริญญาบัณฑิตสาขาวิศวกรรมศาสตร์ (วิศวกรรมคอมพิวเตอร์) (เกียรตินิยมอันดับ 1) <br />
+                นักศึกษาผู้มีผลการเรียนยอดเยี่ยมอันดับหนึ่ง ภาควิชาวิศวกรรมคอมพิวเตอร์ (Computer Engineering Department Valedictorian) 2007 - 2010<br />
                 คะแนนเฉลี่ยสะสม: 3.8 / 4.0 
             </li>
         </ul>
@@ -165,52 +168,11 @@ Website and CV in English: <a href="https://ssivakorn.github.io">https://ssivako
             </ul>
         </p>
     </div>
+    </section>
     <section>
     <h2>ผลงานการเปิดเผยจุดอ่อนและช่องโหว่ความมั่นคงปลอดภัยในระบบ</h2>
-    <div class="section_content">
-
-        <p>ระบุเฉพาะที่ได้รับการอนุญาตให้สามารถเปิดเผยต่อสาธารณชนได้</p>
-        <p>
-            <ul>
-                <li><b>Discrepancies and/or RFC violations of hostname verification process in SSL/TLS implementations</b>, 2017</li>
-                <ul>
-                    <li>MatrixSSL: <a href="https://github.com/matrixssl/matrixssl/blob/3-9-0-open/CHANGES.md/#rfc-5280-compliant-certificate-matching">
-                            github.com/matrixssl/matrixssl/blob/<wbr>3-9-0-open/CHANGES.md
-                        </a></li>
-                        <li>GnuTLS: <a href="https://gitlab.com/gnutls/gnutls/issues/185">gitlab.com/gnutls/<wbr>gnutls/issues/185</a>,
-                                <a href="https://gitlab.com/gnutls/gnutls/issues/187">gitlab.com/gnutls/<wbr>gnutls/issues/187</a></li>
-                        <li>HttpClient: <a href="https://issues.apache.org/jira/browse/HTTPCLIENT-1802">issues.apache.org/<wbr>jira/browse/HTTPCLIENT-1802</a></li>
-                        <li>Java Secure Socket Extension (JSSE):
-                            <a href="https://www.oracle.com/security-alerts/cpujul2017.html">oracle.com/security-alerts/cpujul2017.html</a>
-                        </li>
-                </ul>
-                </li>
-
-                <li>
-                    <b>Google vulnerable reward hall of fame</b>, 2015<br />
-                    (co-listed with Jason Polakis) <br />
-                    <ul>
-                        <li>Expose user's sensitive information with cookie hijacking attack</li>
-                        <li>Google "No CAPTCHA reCAPTCHA" vulnerabilities </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <b>eBay responsible disclosure acknowledgements</b>, 2015<br />
-                    Expose user's sensitive information with cookie hijacking attack<br />
-                    <a href="http://ebay.com/securitycenter/researchersacknowledgement.html">
-                        ebay.com/securitycenter/<wbr>researchersacknowledgement.html
-                    </a>
-                </li>
-
-                <li>
-                    <b>Facebook bug bounty</b>, 2014<br />
-                    Evaluate the privacy guarantees of location based services in
-                    <a href="https://newsroom.fb.com/news/2014/04/introducing-a-new-optional-feature-called-nearby-friends/">Facebook Nearby Friends</a><br />
-                    <a href="https://www.facebook.com/whitehat/thanks">facebook.com/whitehat/thanks</a>
-                </li>
-            </ul>
-        </p>
+    <p>ระบุเฉพาะที่ได้รับการอนุญาตให้สามารถเปิดเผยต่อสาธารณชนได้</p>
+    <div id="disclosures"></div>
     </section>
 
     <section>
@@ -408,7 +370,8 @@ Website and CV in English: <a href="https://ssivakorn.github.io">https://ssivako
     </div>
     <h3>กิจกรรมอื่น ๆ </h3>
     <div class="section_content">
-    <p>
+    <div id="others"></div>
+    <!-- <p>
         <ul>
         <li><b>Academic Chair</b>,
         <a href="http://cuwics.github.io/"> Women in Computer Science, Columbia University</a>,
@@ -425,7 +388,7 @@ Website and CV in English: <a href="https://ssivakorn.github.io">https://ssivako
         2014
         </li>
         </ul>
-    </p>
+    </p> -->
     </div>
     </section>
 
