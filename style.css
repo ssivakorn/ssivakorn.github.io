@@ -4,23 +4,32 @@
 }
 
 body, html {
-    /* color: #eee; */
-    color: #222;
+    color: #eee;
+    /* color: #222; */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /* background-color: #212121; */
-    background-color: #fff;
+    background-color: #202124;
+    /* background-color: #fff; */
     -webkit-font-smoothing: antialiased;
 }
 
 
+
+.light-mode {
+    background-color: #fff;
+    color: #202124;
+}
+
+
 h1 {
-    /* font-weight: normal; */
+    font-weight: normal;
 }
 
 h2 {
+    font-weight: normal;
 }
 
 h3 {
+    font-weight: normal;
 }
 
 h4 {
@@ -35,22 +44,41 @@ h4 {
 */
 
 header {
-    padding: 30px 10px 5px 10px;
     max-width: 980px;
+    padding: 50px 20px 5px 20px;
     margin: 0px auto;
+    overflow: auto;
 }
 
 footer {
-    padding: 5px 10px 30px 10px;
     max-width: 980px;
+    padding: 20px 20px 30px 20px;
     margin: 0px auto;
+    overflow: auto;
+}
+
+
+.banner {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 5px 0px; 
+    margin: 0px auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;    
+}
+
+.banner_inner {
+    width: 100%;
+    margin: 0px 20px;
 }
 
 a:link, a:visited {
     text-decoration: none;
     /* color: #0f52ba; */
-    color: #0020c2;
-    /* color: #0090fe; */ /* light blue */
+    /* color: #0020c2; */
+    color: #0090fe; /* light blue */
     /* color: #4285f4; */
 
     /*
@@ -63,10 +91,12 @@ a:link, a:visited {
 }
 
 a:hover {
-    text-decoration: none;
-    background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    text-decoration: underline;
+    color: #0090fe; /* light blue */
+    /* background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    */
 }
 
 
@@ -98,18 +128,21 @@ li {
 /* contents and sections */
 .content {
     max-width: 980px;
-    height: auto;
     margin: 0px auto;
+    height: auto;
+    padding: 20px;
     overflow: auto;
-    padding: 0px 10px;
 }
+
+
+
 .half {
     max-width: 470px;
 }
 
 section {
     /* min-width: 470px; */
-    margin: 0px 10px 10px 0px;
+    margin: 0px 0px 10px 0px;
     float: left;
     width: 100%;
 }

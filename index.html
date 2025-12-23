@@ -1,30 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="dark">
     <head>
         <meta charset = "utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Cyber Security Researcher, Consultant, Developer" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="https://avatars1.githubusercontent.com/u/1749489" />		
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="favicon.png" />
         <title>Suphannee Sivakorn</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
 <body>
+<script>
+    $(document).ready(function() {
+        $('#header').load("header.html");
+        $('#education').load("edu.html");
+        $('#experience').load("exp.html");
+        $('#awards').load("awards.html");
+        $('#disclosures').load("disclosures.html");
+        $('#talks').load("talks.html");
+        $('#others').load("others.html");
+        $('#footer').load("footer.html");
+    });
+</script>
+
+<nav class="navbar bg-dark bg-body-tertiary fixed-top" data-bs-theme="dark">
+  <!-- Navbar content -->
+    <form class="container-fluid justify-content-end"></div>
+    <!-- <div class="banner"> -->
+        <!-- <div class="floatright"> -->
+        <!-- <div class="banner_inner"> -->
+        <a href="cv.html" class="btn btn-sm btn-primary me-2">
+            Full CV (printable)
+        </a>
+        <a href="thaicv.html" class="btn btn-sm btn-primary">
+            Thai CV 🇹🇭
+        </a>
+        <!-- <a id="dark-mode-switcher" onclick="toggle_theme()">dark mode: on</a> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    </form>
+</nav>
+
+<div class="container mt-5">
 <header>
-<h1>Suphannee Sivakorn</h1>
+<h1 class="pt-4">Suphannee Sivakorn</h1>
+<div id="header"></div>
 </header>
 <div class="content">
-<section>
-    <p>
-    Cyber Security Researcher, Consultant, Software Engineer, Data Scientist <br />
-    Email: <a target="_blank" href="https://mailhide.io/e/5MVXO">s......@columbia.edu</a> 
-    <br />
-    Links:
-    <a href="https://github.com/ssivakorn">Github</a>,
-    <a href="https://scholar.google.com/citations?user=M0imw8QAAAAJ">Google Scholar</a>,
-    <a href="https://twitter.com/ssivakorn">Twitter</a>
-    </p>
-</section>
-
+<!-- 
 <section>
     <h2>Interests</h2>
     <div class="section_content">
@@ -38,79 +64,31 @@
         </p>
     </div>
 </section>
+-->
+<div id="education"></div>
+<div id="experience"></div>
 
 <section>
-    <h2>Education</h2>
+    <h2>Selected Publications</h2>
     <div class="section_content">
-        <ul>
-            <li>
-                <b>Columbia University</b>, September 2013 - April 2018<br />
-                Ph.D. in Computer Science<br />
-                M.Phil. in Computer Science, October 2016<br />
-                Advisors:
-                <a href="https://www.cs.columbia.edu/~angelos/">Prof. Angelos D. Keromytis</a> and
-                <a href="https://www.cs.columbia.edu/~smb/">Prof. Steven M. Bellovin</a>
-                <br />
-                Thesis: <a href="https://academiccommons.columbia.edu/doi/10.7916/D8001JJ6">Understanding Flaws in the Deployment and Implementation of Web Encryption</a>
-            </li>
-
-            <li>
-                <b>New York University</b>, September 2011 - May 2013<br />
-                M.S. in Computer Science
-            </li>
-            <li>
-                <b>Mahidol University</b>, June 2006 - April 2010<br />
-                B.Eng. in Computer Engineering (Honors)
-            </li>
-        </ul>
+        <p><a href="publications.html">Full publication list</a></p>
     </div>
-</section>
-
-<section>
-    <h2>Experience</h2>
-    <div class="section_content">
-        <ul>
-            <li>
-                <b>Security Architect/Security Data Scientist</b>, September 2018 - Current <br />
-                Bloomberg LP, New York, NY<br />
-                CTO Security Architecture
-            </li>
-            <li>
-                <b>Professor in Computer Science</b>, December 2019 - Current <br />
-                Rajamangala University of Technology Tawan-ok, Thailand<br />
-                Department of Computer Science, Faculty of Science and Technology
-            </li>
-            <li>
-                <b>Security Architecture Intern</b>, June - August, 2018 <br />
-                Bloomberg LP, New York, NY <br />
-                CTO Security Architecture
-            </li>
-            <li>
-                <b>Graduate Student Research Assistant</b>, September 2013 - April 2018<br />
-                Columbia University, New York, NY <br />
-                Network Security Lab<br />
-            </li>
-            <li>
-                <b>Security Research Intern</b>, May - September 2016 <br />
-                NEC Laboratories America, Inc., Princeton, NJ<br />
-                Computer Security Department <br />
-            </li>
-            <li>
-                <b>Data Processing and Technical Support</b>, February - May 2013 <br />
-                NYU Press, New York University, New York, NY
-            </li>
-            <li>
-                <b>Quality Assurance Engineer</b>, May - July 2011<br />
-                Venda, Inc., Bangkok, Thailand
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2>Publications</h2>
     <div class="section_content">
         <p>
+        <div class="publist">
+            <ul>
+                <li>
+                    <a href="papers/ysun.eurosp2020.pdns.pdf">
+                    <b>Detecting Malware Injection with Program-DNS Behavior</b>
+                    </a>
+                    <br />
+                    Y. Sun, K. Jee, <b>S. Sivakorn</b>, Z. Li, C. Lumezanu, L. Korts-Pärn, Z. Wu, J. Rhee, C. H. Kim, M. Chiang, P. Mittal <br />
+                    Proceedings of the 5th IEEE European Symposium on Security and Privacy (EuroS&amp;P),
+                    All Digital Event (due to COVID-19), September 2020.
+                    (Acceptance rate: 15%)
+                </li>
+            </ul>
+        </div>
         <div class="publist">
             <ul>
                 <li>
@@ -135,7 +113,7 @@
                     San Jose, California, USA, May 2017.
                     (Acceptance rate: 13.33%)
                     <ul>
-                        <li>Project's repo:
+                        <li>Project repository:
                             <a href="https://github.com/HVLearn/HVLearn">github.com/HVLearn/HVLearn</a>,
                             <a href="https://github.com/HVLearn/HVLearn/wiki">wiki</a>
                         </li>
@@ -189,7 +167,7 @@
                     (Acceptance rate: 13.75%)
                     <ul>
                         <li>Also presented at 
-                            <a href="https://www.blackhat.com/us-16/briefings.html#http-cookie-hijacking-in-the-wild-security-and-privacy-implications">BlackHat USA 2016</a>
+                            <a href="https://www.blackhat.com/us-16/briefings.html#http-cookie-hijacking-in-the-wild-security-and-privacy-implications">Black Hat USA 2016</a>
                         </li>
                         <li>Media Coverage:
                             <a href="https://securityintelligence.com/news/cookie-encryption-does-not-always-happen-researchers-find/">Security Intelligence</a> |
@@ -216,7 +194,7 @@
                     (Acceptance rate: 17.3%) 
                     <ul>
                         <li>Also presented at
-                            <a href="https://www.blackhat.com/asia-16/briefings.html#im-not-a-human-breaking-the-google-recaptcha">BlackHat Asia 2016</a>
+                            <a href="https://www.blackhat.com/asia-16/briefings.html#im-not-a-human-breaking-the-google-recaptcha">Black Hat Asia 2016</a>
                         </li>
                         <li>Media Coverage:
                             <a href="http://www.theregister.co.uk/2016/04/07/captcha_rapture_as_google_facebook_humancheckers_wasted/">The Register</a> |
@@ -236,7 +214,7 @@
                             <a href="https://www.dhs.gov/sites/default/files/publications/dhs-daily-report-2016-04-08.pdf">DHS</a>
                         </li>
                         <li>
-                            <a href="http://cs.columbia.edu/~suphannee/captcha">Image CAPTCHA dataset</a> collected from Google reCAPTCHA and Facebook image CAPTCHA services
+                            Dataset: <a href="http://cs.columbia.edu/~suphannee/captcha">Image CAPTCHA dataset</a> collected from Google reCAPTCHA and Facebook image CAPTCHA services
                         </li>
                     </ul>
                 </li>
@@ -258,323 +236,40 @@
                     <ul>
                         <li><a href="https://www.youtube.com/watch?v=7jCr36IT_2s">Video</a> of our live attack demonstration against <a href="https://www.swarmapp.com/">Foursquare Swarm</a> service
 
-                            <li>Project's repo: <a href="https://github.com/nettrino/LBSProximityAuditor">
-                                    Audit framework for Location Based Services</a>
+                            <li>Project repository: <a href="https://github.com/nettrino/LBSProximityAuditor">github.com/nettrino/LBSProximityAuditor</a> (Audit framework for Location Based Services)
                             </li>
                     </ul>
                         </li>
             </ul>
         </div>
-
-        <div class="publist">
-            <ul>
-                <li>
-                    <a href="papers/tritilanunt.iscit2010.entropyddos.pdf">
-                        <b>Entropy-based Input-Output Traffic Mode Detection Scheme for DoS/DDoS Attacks</b>.
-                    </a>
-                    <br />
-                    S. Tritilanunt, <b>S. Sivakorn</b>, C. Juengjincharoen, A. Siripornpisan.
-                    <br />
-                    In Proceedings of 2010 International Symposium on Communications and Information Technologies (ISCIT).
-                    Tokyo, JAPAN, October 2010.
-                </li>
-            </ul>
-        </div>
-        </p>
+       </p>
     </div>
 </section>
 
 <section>
     <h2>Grants, Awards and Scholarships</h2>
-    <div class="section_content">
-        <p>
-            <ul>
-                <li>
-                    <b>BlackHat Speaker Honorarium</b>, August 2016<br />
-                    BlackHat USA 2016, Las Vagas
-                </li>
-                <li>
-                    <b>BlackHat Speaker Honorarium</b>, April 2016<br />
-                    BlackHat Asia 2016, Singapore
-                </li>
-
-                <li><b>ACM CCS Student Travel Grant</b>, October 2015<br />
-                    22nd ACM Conference on Computer and Communications Security (CCS) <br />
-                    <a href="http://www.sigsac.org/ccs/CCS2015/grant.html">
-                        sigsac.org/ccs/CCS2015/grant.html
-                    </a>
-                </li>
-
-                <li>
-                    <b>New York University Travel Grants</b>, October 2012<br />
-                    12th Annual Grace Hopper Celebration of Women in Computing<br />
-                    <a href="https://cs.nyu.edu/dynamic/achievements/masters/">
-                        cs.nyu.edu/webapps/content/research/student_recognition
-                    </a>
-                </li>
-
-                <li>
-                    <b>Royal Thai Government Scholarship</b>, 2011 - 2017<br />
-                    Computer Science/Engineering MS - PhD fellowship
-                </li>
-
-                <li>
-                    <b>Mahidol University Conference Funding and Paper Presentation</b>, November 2010<br />
-                    14th National Computer Science and Engineering Conference 2010
-                </li>
-                <li><b>Third Place Winner in Thailand Network Security Contest</b>, 2009<br />
-                    Bangkok, Thailand
-                </li>
-                <li>
-                    <b>Valedictorian in Computer Engineering, Mahidol University</b>, 2008 - 2010<br />
-                    Annual Scholarship
-                </li>
-                <li
-                    ><b>Student Exchange between Japan and Thailand</b>, October 2004<br />
-                    Fukuoka, Japan
-                </li>
-            </ul>
-        </p>
+    <div id="awards"></div>
 </section>
 
 <section>
     <h2>Bug and Vulnerability Disclosures</h2>
-    <div class="section_content">
-        <p>
-            <ul>
-                <li><b>Discrepancies and/or RFC violations of hostname verification process in SSL/TLS implementations</b>, 2017</li>
-                <ul>
-                    <li>MatrixSSL: <a href="https://github.com/matrixssl/matrixssl/blob/3-9-0-open/CHANGES.md/#rfc-5280-compliant-certificate-matching">
-                            github.com/matrixssl/matrixssl/blob/3-9-0-open/CHANGES.md
-                        </a></li>
-                        <li>GnuTLS: <a href="https://gitlab.com/gnutls/gnutls/issues/185">gitlab.com/gnutls/gnutls/issues/185</a>,
-                            <a href="https://gitlab.com/gnutls/gnutls/issues/187">gitlab.com/gnutls/gnutls/issues/187</a></li>
-                        <li>HttpClient: <a href="https://issues.apache.org/jira/browse/HTTPCLIENT-1802">issues.apache.org/jira/browse/HTTPCLIENT-1802</a></li>
-                        <li>Java Secure Socket Extension (JSSE):
-                            <a href="https://www.oracle.com/technetwork/topics/security/cpujul2017-3236622.html">https://www.oracle.com/technetwork/topics/security/cpujul2017-3236622.html</a>
-                        </li>
-                </ul>
-                </li>
-
-                <li>
-                    <b>Google vulnerable reward hall of fame</b>, 2015<br />
-                    (co-listed with Jason Polakis) <br />
-                    <ul>
-                        <li>Expose user's sensitive information with cookie hijacking attack</li>
-                        <li>Google "No CAPTCHA reCAPTCHA" vulnerabilities </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <b>Ebay responsible disclosure acknowledgements</b>, 2015<br />
-                    Expose user's sensitive information with cookie hijacking attack<br />
-                    <a href="http://ebay.com/securitycenter/researchersacknowledgement.html">
-                        ebay.com/securitycenter/researchersacknowledgement.html
-                    </a>
-                </li>
-
-                <li>
-                    <b>Facebook bug bounty</b>, 2014<br />
-                    Evaluate the privacy guarantees of location based services in
-                    <a href="https://newsroom.fb.com/news/2014/04/introducing-a-new-optional-feature-called-nearby-friends/">Facebook Nearby Friends</a><br />
-                    <a href="https://www.facebook.com/whitehat/thanks">facebook.com/whitehat/thanks</a>
-                </li>
-            </ul>
-        </p>
+    <div id="disclosures"></div>
 </section>
 
 <section>
-    <h2>Teaching</h2>
-    <div class="section_content">
-        <p>
-            <ul>
-                <li><b>Teaching Assistant - Security Architecture and Engineering</b>, Fall 2015<br />
-                    Instructor: Prof. Steven M. Bellovin, Columbia University<br />
-                    Graduate-level course, 80 students
-                </li>
-                <li><b>Teaching Assistant - Introduction to Programming in C</b>, Summer 2015<br />
-                    Instructor: Prof. Angelika Zavou, Columbia University<br />
-                    Session I: Grade 11, 12 or Freshman year, 20 students<br />
-                    Session II: Grade 10 and 11, 16 students
-                </li>
+    <h2>Professional Activities and Services</h2>
+    <p></p>
+    <div id="talks"></div>
+    <h3>Others</h3>
+    <div id="others"></div>
 
-                <li><b>Teaching Assistant - Introduction to Programming in C</b>, Summer 2014<br />
-                    Instructor: Theofilos Petsios, Columbia University<br />
-                    Grade 11, 12 or Freshman year, 16 students
-                </li>
 
-                <li><b>Teaching Assistant - Intrusion Detection Systems</b>, Spring 2014<br />
-                    Instructor: Prof. Shlomo Hershkop, Columbia University <br />
-                    Graduate-level course, 30 students
-                </li>
-                <!-- <li>Others: Guest Lecturer - Anonymity and Privacy, Spring 2017</li> -->
-            </ul>
-        </p>
 </section>
 
-<!--
-    <p>
-    <h3>Skills &amp; Expertise</h3>
-    <hr />
-    <div class="langlist">
-    <div class="langlist">
-    <div class="skill"><h4>Languages: </h4></div>
-    <div class="lang">C</div>
-    <div class="lang">C++</div>
-    <div class="lang">PYTHON</div>
-    <div class="lang">SHELL SCRIPT</div>
-    <div class="lang">JAVA</div>
-    <div class="lang">SQL</div>
-    <div class="lang">PHP</div>
-    <div class="lang">JAVASCRIPT</div>
-    <div class="lang">HTML</div>
-    <div class="lang">CSS</div>
-    </div>
-    <div class="langlist">
-    <div class="skill"><h4>Tools: </h4></div>
-    <div class="lang">VI</div>
-    <div class="lang">ECLIPSE</div>
-    <div class="lang">ANDROID STUDIO</div>
-    <div class="lang">PROCESSING</div>
-    <div class="lang">SUBVERSION</div>
-    <div class="lang">GIT</div>
-    <div class="lang">MITMPROXY</div>
-    <div class="lang">SELENIUM WEBDRIVER</div>
-    </div>
-    </div>
-    </p>
--->
-<!--
-    <p>
-    <h3>Activities and Services</h3>
-    <hr />
-    <ul>
-    <li>
-    <b>Academic Chair,</b>
-    <a href="http://cuwics.github.io/">
-    Women in Computer Science, Columbia University
-    </a>
-    2015 - 2016
-    </li>
-    <li>
-    <b>External Reviewer,</b>
-    <a href="http://www.dimva.org/dimva2015/">
-    DIMVA 2015
-    </a>
-    </li>
-    <li>
-    <b>Local Arrangement,</b>
-    <a href="http://acns2015.cs.columbia.edu/">
-    ACNS 2015
-    </a>
-    </li>
-    <li>
-    <b>External Reviewer,</b>
-    <a href="http://cse.iitkgp.ac.in/conf/SPACE2014/">
-    SPACE 2014
-    </a>
-    </li>
-    </ul>
-    </p>
--->
-
-<!--
-    <h3>Coursework</h3>
-    <details id="courselist">
-    <summary class="border:0px;">see all</summary>
-    <h4>Graduate Courses (Columbia University) 2013 - Current</h4>
-    <ul>
-    <li>Artificial Intelligence</li>
-    <li><a href="http://www.cs.columbia.edu/~tal/4261/F14/index.htm">Introduction to Cryptography</a></li>
-    <li><a href="http://www.cs.columbia.edu/~junfeng/13fa-w4118/">Operating Systems</a></li>
-    <li><a href="https://www.cs.columbia.edu/~smb/classes/f13/">Security Architecture and Engineering</a></li>
-    </ul>
-
-    <h4>Graduate Courses (New York University) 2011 - 2013</h4>
-    Programming and Software Engineering
-    <ul>
-    <li>Programming Languages</li>
-    <li>Production Quality Software</li>
-    <li>Open Source Tools</li>
-    </ul>
-    Databases
-    <ul>
-    <li>Database Systems</li>
-    <li>Advanced Database Systems</li>			
-    </ul>
-    Computation for Science and Society
-    <ul>
-    <li>Computer Graphics, <a href="https://files.nyu.edu/ss6330/public">showcase</a></li>
-    <li>Applications Server</li>
-    <li>Cloud Computing</li>
-    <li>Data Communication and Networks</li>
-    </ul>
-    Systems
-    <ul>
-    <li>Operating Systems</li>
-    </ul>
-    Computer Theory
-    <ul>
-    <li>Fundamental Algorithms</li>
-    </ul>
-
-    <h4>Undergraduate Courses (Mahidol University) 2006 - 2010</h4>
-    Programming and Software Engineering
-    <ul>
-    <li>Computer Programming</li>
-    <li>Programming Techniques</li>
-    <li>System Programming</li>
-    <li>Programming Paradigms</li>
-    <li>Software Engineering</li> 
-    <li>Advanced Topics in Software Engineering</li>
-    </ul>
-    Computer and Network Security
-    <ul>
-    <li>Introduction to Cryptography</li>
-    <li>Computer Security</li> 
-    </ul>
-    Databases
-    <ul>
-    <li>Database Systems</li>
-    <li>Data Mining</li>
-    </ul>
-    Computation for Science and Society
-    <ul>
-    <li>Computer Applications</li>
-    <li>Data Communication and Computer Networks</li>
-    <li>Information Technology in Daily Life</li>
-    <li>Image Processing</li>
-    <li>Computer Engineering Project</li>
-    </ul>
-    Systems
-    <ul>
-    <li>Operating Systems</li>
-    </ul>
-    Computer Engineering
-    <ul>
-    <li>Computer Architecture</li>
-    <li>Introduction to IC Design</li>
-    <li>Embedded Systems</li>				
-    <li>Signals and Systems</li>
-    <li>Digital Circuit Design</li>
-    <li>Electric Circuit Analysis</li>
-    <li>Engineering Electronics</li>
-    </ul>
-    Computer Theory
-    <ul>
-    <li>Data structures and Algorithms</li>
-    <li>Numerical Methods and Applications</li>
-    <li>Discrete Mathematics</li>
-    </ul>
-    </details>
--->
-
 </div>
-
-<footer>
-    <!-- <hr /> -->
-    <div class="floatright">&copy; 2020 Suphannee Sivakorn</div>
-</footer>
-
+<div id="footer"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<!-- <script src="helper.js"></script> -->
 </body>
 </html>
