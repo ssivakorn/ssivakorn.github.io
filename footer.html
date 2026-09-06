@@ -1,4 +1,6 @@
+<!-- footer.html --> 
 <footer class="pb-4">
     <hr />
-    <div class="floatright">&copy; 2026 Suphannee Sivakorn</div>
+    <div class="text-end">&copy; <span id="c_year"></span> Suphannee Sivakorn</div>
 </footer>
+<script>document.getElementById('c_year').textContent = new Date().getFullYear();</script>
