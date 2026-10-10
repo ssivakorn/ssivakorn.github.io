@@ -15,6 +15,10 @@ Steps:
 
 5. Confirm the PDF was saved to `/Users/bo/workspace/sites/ssivakorn.github.io/resume.pdf` and report success.
 
+The script also rewrites all relative links (e.g. `papers/sivakorn.isc2026.recaptcha.pdf`) to
+absolute URLs (e.g. `https://ssivakorn.github.io/papers/sivakorn.isc2026.recaptcha.pdf`) so
+links in the PDF point to the live site.
+
 Current PDF settings (edit the script to change):
 - Scale: 77%
 - Margins: 0.5 inches all sides
