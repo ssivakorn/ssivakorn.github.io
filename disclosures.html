@@ -1,16 +1,16 @@
 <div class="section_content">
-    <p>Listed only bugs and vulnerabilities authorized for public disclosure</p>
+    <p>Only vulnerabilities that have been authorized for public disclosure are listed.</p>
     <ul>
         <li>
-            <b>Google Abuse VRP — Responsible disclosure: AI solving of Google reCAPTCHA visual challenges</b>, 2026<br />
+            <b>Google Abuse Vulnerability Reward Program — AI-based solving of reCAPTCHA image challenges</b>, 2026<br />
             (Reference: 557908167)<br />
-            <ul>
-                <li>Reported that free, open-source, locally-run vision models (CLIP and OWLv2) can solve reCAPTCHA image challenges with a 92.6% per-session success rate, with no task-specific training or paid API</li>
-                <!-- <li>Related publication: <a href="papers/sivakorn.isc2026.recaptcha.pdf">Robot Visions: Breaking reCAPTCHA at Zero Cost and Zero Shot</a>, accepted at 29th Information Security Conference (ISC), October 2026</li> -->
-            </ul>
+            Free, open-source vision models (CLIP and OWLv2) running locally solved 92.6% of reCAPTCHA sessions at zero cost, without any task-specific training or paid APIs (<a href="papers/sivakorn.isc2026.recaptcha.pdf">paper</a>).
+            <!-- Related publication: <a href="papers/sivakorn.isc2026.recaptcha.pdf">Robot Visions: Breaking reCAPTCHA at Zero Cost and Zero Shot</a>, accepted at 29th Information Security Conference (ISC), October 2026 -->
         </li>
 
-        <li><b>Discrepancies and RFC violations of hostname verification process in SSL/TLS implementations</b>, 2017
+        <li><b>Discrepancies and RFC violations in the hostname verification of SSL/TLS implementations</b>, 2017<br />
+        Several of these flaws could enable man-in-the-middle attacks. Found using <a href="https://github.com/HVLearn/HVLearn">HVLearn</a>, an automated black-box testing framework (<a href="papers/sivakorn.sp2017.hvlearn.pdf">paper</a>).<br />
+        Fixes and advisories:
         <ul>
             <li>MatrixSSL:
                 <a
@@ -24,7 +24,7 @@
                 <a href="https://gitlab.com/gnutls/gnutls/issues/185">gitlab.com/gnutls/<wbr>gnutls/issues/185</a>,
                 <a href="https://gitlab.com/gnutls/gnutls/issues/187">gitlab.com/gnutls/<wbr>gnutls/issues/187</a>
             </li>
-            <li>HttpClient: <a
+            <li>Apache HttpClient: <a
                     href="https://issues.apache.org/jira/browse/HTTPCLIENT-1802">issues.apache.org/<wbr>jira/browse/HTTPCLIENT-1802</a>
             </li>
             <li>Java Secure Socket Extension (JSSE):
@@ -36,28 +36,28 @@
 
         <li>
             <b>Google Vulnerability Reward Program — Security Hall of Fame</b>, 2015<br />
-            (co-listed with Jason Polakis) <br />
+            (jointly credited with Jason Polakis)<br />
             <ul>
-                <li>Expose user's sensitive information with cookie hijacking attack</li>
-                <li>Google <a href="papers/sivakorn.eurosp2016.recaptcha.pdf">"No CAPTCHA reCAPTCHA" vulnerabilities</a>
-                </li>
+                <li>HTTP cookie hijacking attacks that expose users' sensitive information (<a href="papers/sivakorn.sp2016.cookiehijack.pdf">paper</a>).</li>
+                <li>Vulnerabilities that allow Google's "No CAPTCHA reCAPTCHA" to be bypassed automatically (<a href="papers/sivakorn.eurosp2016.recaptcha.pdf">paper</a>).</li>
             </ul>
         </li>
 
         <li>
-            <b>eBay responsible disclosure acknowledgements</b>, 2015<br />
-            Expose user's sensitive information with cookie hijacking attack<br />
+            <b>eBay Responsible Disclosure — Researcher Acknowledgement</b>, 2015<br />
+            HTTP cookie hijacking attacks that expose users' sensitive information (<a href="papers/sivakorn.sp2016.cookiehijack.pdf">paper</a>).
+            Acknowledged at
             <a href="https://pages.ebay.com/securitycenter/archived-researchers.html">
                 pages.ebay.com/securitycenter/<wbr>archived-researchers.html
             </a>
         </li>
 
         <li>
-            <b>Facebook bug bounty</b>, 2014<br />
-            Evaluate the privacy guarantees of location based services in
+            <b>Facebook Bug Bounty</b>, 2014<br />
+            Attacks that pinpoint a user's precise location through
             <a href="https://newsroom.fb.com/news/2014/04/introducing-a-new-optional-feature-called-nearby-friends/">Facebook
-                Nearby Friends</a><br />
-            <a href="https://web.archive.org/web/20150818134651/https://www.facebook.com/whitehat/thanks/">
+                Nearby Friends</a>, a location proximity service (<a href="papers/polakis.ccs2015.location.pdf">paper</a>).
+            Acknowledged at <a href="https://web.archive.org/web/20150818134651/https://www.facebook.com/whitehat/thanks/">
                 facebook.com/whitehat/thanks
             </a>
             <!-- <a href="https://www.facebook.com/whitehat/thanks">facebook.com/whitehat/thanks</a> -->
